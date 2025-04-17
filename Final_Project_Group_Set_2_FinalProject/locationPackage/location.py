@@ -13,8 +13,43 @@
 # Brief Description of the assignment: Solves a scavenger hunt and provides picture proof that we were there
 
 
-# Brief Description of what this module does: 
+# Brief Description of what this module does: Decrypts the location assigned to our team
 # Citations: 
 
 # Anything else thats relevant:
 
+import json
+
+class locationDecrypt():
+
+    def readJSONFile(self, filePath):
+        """
+        Reads a .json file into Python data structures
+        @params filePath String: Path to the file to convert
+        @returns data Dictionary: A dictionary of data from the file
+        """
+        with open(filePath, 'r') as file:
+            data = json.load(file)
+        return data
+
+    def readTXTFile(self, filePath):
+        """
+        Reads a .txt file into Python data structures
+        @params filePath String: Path to the file to convert
+        @params filePath String: 
+        @returns data List: A list of data from the file
+        """
+        with open(filePath, 'r') as file:
+            data = [line.strip() for line in file if line.strip()]
+        return data
+
+    def getWordsFromNumbers(self, ):
+        """
+        Make a string of the words translated from the line file
+        @params filePath String: Path to the file to convert
+        @params filePath String: 
+        @returns data List: A list of data from the file
+        """
+        with open(filePath, 'r') as file:
+            data = [line.strip() for line in file if line.strip()]
+        return data

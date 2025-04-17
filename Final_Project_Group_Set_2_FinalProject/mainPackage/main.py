@@ -18,4 +18,29 @@
 
 # Anything else thats relevant:
 
+from locationPackage.location import*
+from moviePackage.movie import*
+from groupImagePackage.groupImage import*
+
 if __name__ == "__main__":
+
+    path = "Data/"
+    encryptedGroupHintsFile = path + "EncryptedGroupHints Spring 2025.json"
+    teamsAndEncryptedMessagesForDistributionFile = path + "TeamsAndEncryptedMessagesForDistribution.json"
+    englishFile = path + "UCEnglish.txt"
+
+    # Decrypt the location from the three files given
+    locationDecrypter = locationDecrypt()
+
+    # -- Creates python structures from files --
+    # Creates Dict
+    hints = locationDecrypter.readJSONFile(encryptedGroupHintsFile)
+
+    # Creates Dict
+    messagesForDistribution = locationDecrypter.readJSONFile(teamsAndEncryptedMessagesForDistributionFile)
+
+    # Creates List
+    english = locationDecrypter.readTXTFile(englishFile)
+
+
+    # Use those structures too get the hidden message
