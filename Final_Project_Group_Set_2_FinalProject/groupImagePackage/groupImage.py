@@ -10,11 +10,13 @@
 # Due Date:   04/30/2025
 # Course #/Section: IS 4010-001
 # Semester/Year: Spring 2025
-# Brief Description of the assignment: Solves a scavenger hunt and provides picture proof that we were there
+# Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: 
+# Brief Description of what this module does: Returns an image of our success
 # Citations: 
 
-# Anything else thats relevant:
+# Anything else thats relevant: Myra Fleener
+
+class picture():
 

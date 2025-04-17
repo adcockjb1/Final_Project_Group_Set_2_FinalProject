@@ -10,13 +10,13 @@
 # Due Date:   04/30/2025
 # Course #/Section: IS 4010-001
 # Semester/Year: Spring 2025
-# Brief Description of the assignment: Solves a scavenger hunt and provides picture proof that we were there
+# Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: 
+# Brief Description of what this module does: Solves the scavenger hunt an prints a picture of our success
 # Citations: 
 
-# Anything else thats relevant:
+# Anything else thats relevant: Myra Fleener
 
 from locationPackage.location import*
 from moviePackage.movie import*
@@ -28,6 +28,8 @@ if __name__ == "__main__":
     encryptedGroupHintsFile = path + "EncryptedGroupHints Spring 2025.json"
     teamsAndEncryptedMessagesForDistributionFile = path + "TeamsAndEncryptedMessagesForDistribution.json"
     englishFile = path + "UCEnglish.txt"
+    teamName = "Myra Fleener"
+
 
     # Decrypt the location from the three files given
     locationDecrypter = locationDecrypt()
@@ -44,3 +46,5 @@ if __name__ == "__main__":
 
 
     # Use those structures too get the hidden message
+    hintWords = locationDecrypter.translateNumbersToWords(hints[teamName], english)
+    
