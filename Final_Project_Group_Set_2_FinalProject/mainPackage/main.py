@@ -44,15 +44,18 @@ if __name__ == "__main__":
     # Creates List
     english = locationDecrypter.readTXTFile(englishFile)
 
-
-    # Use those structures too get the hidden message
+    # Use those structures to get the hidden message
     hintWords = locationDecrypter.translateNumbersToWords(hints[teamName], english)
     print(locationDecrypter.translateListToWords(hintWords))
     
 
     # -- Decrypt the movie using the fernet algorithm here --
+    movieDecrypter = movieDecrypt()
 
+    print(movieDecrypter.moviepyCheck())
 
 
     # -- Display the image of our success here --
+    printer = picturePrinter()
 
+    print(printer.groupImagepyCheck())

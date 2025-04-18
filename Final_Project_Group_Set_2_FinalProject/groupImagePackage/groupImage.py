@@ -18,7 +18,7 @@
 
 # Anything else thats relevant: Group name: Myra Fleener
 
-class picture():
+class picturePrinter():
 
     def groupImagepyCheck(self):
         """

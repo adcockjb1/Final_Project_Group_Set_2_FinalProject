@@ -18,9 +18,9 @@
 
 # Anything else thats relevant: Group name: Myra Fleener
 
-class movieDecrypt:
+class movieDecrypt():
 
-    def groupImagepyCheck(self):
+    def moviepyCheck(self):
         """
         Prints to confirm the class and function work
         @params self Self: No params
