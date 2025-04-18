@@ -13,10 +13,10 @@
 # Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: Solves the scavenger hunt an prints a picture of our success
+# Brief Description of what this module does: Solves the scavenger hunt and prints a picture of our success
 # Citations: 
 
-# Anything else thats relevant: Myra Fleener
+# Anything else thats relevant: Group name: Myra Fleener
 
 from locationPackage.location import*
 from moviePackage.movie import*
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     teamName = "Myra Fleener"
 
 
-    # Decrypt the location from the three files given
+    # -- Decrypt the location from the three files given --
     locationDecrypter = locationDecrypt()
 
     # -- Creates python structures from files --
@@ -47,4 +47,12 @@ if __name__ == "__main__":
 
     # Use those structures too get the hidden message
     hintWords = locationDecrypter.translateNumbersToWords(hints[teamName], english)
+    print(locationDecrypter.translateListToWords(hintWords))
     
+
+    # -- Decrypt the movie using the fernet algorithm here --
+
+
+
+    # -- Display the image of our success here --
+

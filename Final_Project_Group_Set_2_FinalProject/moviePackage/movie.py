@@ -13,10 +13,18 @@
 # Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: Decrypts our team's movie
+# Brief Description of what this module does: Creates a class to decrypt the movie assigned to our team
 # Citations: 
 
-# Anything else thats relevant: Myra Fleener
+# Anything else thats relevant: Group name: Myra Fleener
 
 class movieDecrypt:
 
+    def groupImagepyCheck(self):
+        """
+        Prints to confirm the class and function work
+        @params self Self: No params
+        @returns check String: A string stating that it works
+        """
+        check = "movie.py works"
+        return(check)

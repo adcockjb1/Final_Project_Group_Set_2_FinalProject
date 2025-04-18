@@ -13,10 +13,18 @@
 # Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: Returns an image of our success
+# Brief Description of what this module does: Creates a class to display our teams group picture
 # Citations: 
 
-# Anything else thats relevant: Myra Fleener
+# Anything else thats relevant: Group name: Myra Fleener
 
 class picture():
 
+    def groupImagepyCheck(self):
+        """
+        Prints to confirm the class and function work
+        @params self Self: No params
+        @returns check String: A string stating that it works
+        """
+        check = "groupImage.py works"
+        return(check)

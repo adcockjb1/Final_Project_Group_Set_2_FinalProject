@@ -13,10 +13,10 @@
 # Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: Decrypts the location assigned to our team
+# Brief Description of what this module does: Creates a class to decrypt the location assigned to our team
 # Citations: 
 
-# Anything else thats relevant: Myra Fleener
+# Anything else thats relevant: Group name: Myra Fleener
 
 import json
 
@@ -51,7 +51,7 @@ class locationDecrypt():
         @returns englishList List: A list of translated words
         """
         englishList = []
-        print(type(englishList))
+        
         i = 0
         while i < len(numbers):
             currentNumberString = numbers[i]
@@ -62,3 +62,24 @@ class locationDecrypt():
 
             i += 1
         return englishList
+
+    def translateListToWords(self, untranslatedList):
+        """
+        Make a string from a list of words
+        @params untranslatedList List: The list containing all of the numbers
+        @returns translatedString String: The string derived from the given list
+        """
+        translatedString = ""
+
+        i = 0
+        for word in untranslatedList:
+            if i == 0:
+                word = word.capitalize()
+                translatedString = word + " "
+            elif i == len(untranslatedList) - 1:
+                translatedString = translatedString + word + "."
+            else:
+                translatedString = translatedString + word + " "
+
+            i = i + 1
+        return translatedString
