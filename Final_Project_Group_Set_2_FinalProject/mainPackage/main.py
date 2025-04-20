@@ -54,8 +54,15 @@ if __name__ == "__main__":
 
     print(movieDecrypter.moviepyCheck())
 
+    key = "???" # we need to ask the key from the professor
+    teamsAndEncryptedMessages = locationDecrypter.readJSONFile(teamsAndEncryptedMessagesForDistributionFile)
+    ourToken = teamsAndEncryptedMessages[teamName]
+    decriptedMovieInfo = movieDecrypt.fernetEncript(key,ourToken)
+    
+
 
     # -- Display the image of our success here --
     printer = picturePrinter()
 
     print(printer.groupImagepyCheck())
+

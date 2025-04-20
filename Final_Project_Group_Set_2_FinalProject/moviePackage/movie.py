@@ -18,9 +18,11 @@
 
 # Anything else thats relevant: Group name: Myra Fleener
 
+from cryptography.fernet import Fernet
+
 class movieDecrypt():
 
-    def moviepyCheck(self):
+    def moviepyCheck(self): # What is this code for?
         """
         Prints to confirm the class and function work
         @params self Self: No params
@@ -28,3 +30,19 @@ class movieDecrypt():
         """
         check = "movie.py works"
         return(check)
+
+    def fernetEncript(self, key, ourToken):
+        """
+        Decripte messtage encripted with Fernet encryption scheme
+        @param key : The fernet key
+        @param token : The encripted file
+        @return String: The decripted message
+        """
+        f = Fernet(key)
+        token = ourToken
+
+        plaintext = f.decrypt(token)
+        decriptedMovieInfo = plaintext.decode()
+        print(plaintext.decode())
+
+        return decriptedMovieInfo
