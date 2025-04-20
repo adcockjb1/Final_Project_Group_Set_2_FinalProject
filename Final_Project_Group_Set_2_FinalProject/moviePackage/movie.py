@@ -39,9 +39,8 @@ class movieDecrypt():
         @return String: The decripted message
         """
         f = Fernet(key)
-        token = ourToken
 
-        plaintext = f.decrypt(token)
+        plaintext = f.decrypt(ourToken)
         decryptedMovieInfo = plaintext.decode()
         print(decryptedMovieInfo)
 
