@@ -42,7 +42,7 @@ class movieDecrypt():
         token = ourToken
 
         plaintext = f.decrypt(token)
-        decriptedMovieInfo = plaintext.decode()
-        print(plaintext.decode())
+        decryptedMovieInfo = plaintext.decode()
+        print(decryptedMovieInfo)
 
-        return decriptedMovieInfo
+        return decryptedMovieInfo
