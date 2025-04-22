@@ -14,7 +14,7 @@
 
 
 # Brief Description of what this module does: Solves the scavenger hunt and prints a picture of our success
-# Citations: 
+# Citations: ChatGPT
 
 # Anything else thats relevant: Group name: Myra Fleener
 
@@ -34,35 +34,25 @@ if __name__ == "__main__":
     # -- Decrypt the location from the three files given --
     locationDecrypter = locationDecrypt()
 
-    # -- Creates python structures from files --
     # Creates Dict
     hints = locationDecrypter.readJSONFile(encryptedGroupHintsFile)
-
-    # Creates Dict
-    messagesForDistribution = locationDecrypter.readJSONFile(teamsAndEncryptedMessagesForDistributionFile)
-
     # Creates List
     english = locationDecrypter.readTXTFile(englishFile)
 
-    # Use those structures to get the hidden message
     hintWords = locationDecrypter.translateNumbersToWords(hints[teamName], english)
-    print(locationDecrypter.translateListToWords(hintWords))
+    locationDecrypter.translateListToWords(hintWords)
     
 
     # -- Decrypt the movie using the fernet algorithm here --
     movieDecrypter = movieDecrypt()
-
-    print(movieDecrypter.moviepyCheck())
 
     key = b"___325px9Qm4Sq1OrAgutpUHzAj49W0J9oHrRVhS2yg=" 
     teamsAndEncryptedMessages = locationDecrypter.readJSONFile(teamsAndEncryptedMessagesForDistributionFile)
     ourToken = teamsAndEncryptedMessages[teamName][0]
     decryptedMovieInfo = movieDecrypter.fernetEncript(key,ourToken)
     
-    
-
 
     # -- Display the image of our success here --
     printer = picturePrinter()
 
-    print(printer.groupImagepyCheck())
+    printer.groupImagepyCheck()

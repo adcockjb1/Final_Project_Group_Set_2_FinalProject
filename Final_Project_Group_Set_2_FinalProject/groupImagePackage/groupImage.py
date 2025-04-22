@@ -14,7 +14,7 @@
 
 
 # Brief Description of what this module does: Creates a class to display our teams group picture
-# Citations: 
+# Citations: ChatGPT
 
 # Anything else thats relevant: Group name: Myra Fleener
 
@@ -24,7 +24,7 @@ class picturePrinter():
         """
         Prints to confirm the class and function work
         @params self Self: No params
-        @returns check String: A string stating that it works
+        @returns N/A
         """
         check = "groupImage.py works"
-        return(check)
+        print(check)

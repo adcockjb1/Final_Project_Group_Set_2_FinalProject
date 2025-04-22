@@ -14,22 +14,13 @@
 
 
 # Brief Description of what this module does: Creates a class to decrypt the movie assigned to our team
-# Citations: 
+# Citations: ChatGPT
 
 # Anything else thats relevant: Group name: Myra Fleener
 
 from cryptography.fernet import Fernet
 
 class movieDecrypt():
-
-    def moviepyCheck(self): # What is this code for?
-        """
-        Prints to confirm the class and function work
-        @params self Self: No params
-        @returns check String: A string stating that it works
-        """
-        check = "movie.py works"
-        return(check)
 
     def fernetEncript(self, key, ourToken):
         """

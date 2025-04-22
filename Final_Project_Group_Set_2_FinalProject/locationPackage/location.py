@@ -14,7 +14,7 @@
 
 
 # Brief Description of what this module does: Creates a class to decrypt the location assigned to our team
-# Citations: 
+# Citations: ChatGPT
 
 # Anything else thats relevant: Group name: Myra Fleener
 
@@ -65,9 +65,9 @@ class locationDecrypt():
 
     def translateListToWords(self, untranslatedList):
         """
-        Make a string from a list of words
+        Prints a string from a list of words
         @params untranslatedList List: The list containing all of the numbers
-        @returns translatedString String: The string derived from the given list
+        @returns N/A
         """
         translatedString = ""
 
@@ -82,4 +82,4 @@ class locationDecrypt():
                 translatedString = translatedString + word + " "
 
             i = i + 1
-        return translatedString
+        print(translatedString)
