@@ -22,8 +22,7 @@ from locationPackage.location import*
 from moviePackage.movie import*
 from groupImagePackage.groupImage import*
 
-if __name__ == "__main__":
-
+def main():
     path = "Data/"
     encryptedGroupHintsFile = path + "EncryptedGroupHints Spring 2025.json"
     teamsAndEncryptedMessagesForDistributionFile = path + "TeamsAndEncryptedMessagesForDistribution.json"
@@ -57,3 +56,6 @@ if __name__ == "__main__":
     printer = picturePrinter()
     
     printer.display_group_photo(groupPic)
+
+if __name__ == "__main__":
+    main()
