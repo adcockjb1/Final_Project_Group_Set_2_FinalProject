@@ -56,3 +56,7 @@ if __name__ == "__main__":
     printer = picturePrinter()
 
     printer.groupImagepyCheck()
+
+    
+    print("Display Group Photo...")
+    display_group_photo()

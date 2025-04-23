@@ -18,6 +18,10 @@
 
 # Anything else thats relevant: Group name: Myra Fleener
 
+from PIL import Image
+import matplotlib.pyplot as plt
+import os
+
 class picturePrinter():
 
     def groupImagepyCheck(self):
@@ -28,3 +32,22 @@ class picturePrinter():
         """
         check = "groupImage.py works"
         print(check)
+
+    def display_group_photo():
+        """
+        Displays photo of group with sign
+        @param image_path: str: The full path to the image file 
+        @return None
+        """
+    
+        image_path = os.path.join("Data", "group_photo.jpg")
+    
+    try:
+        image = Image.open(image_path)
+        plt.imshow(image)
+        plt.axis('off')  
+        plt.title("Group Photo")
+        plt.show()
+
+    except FileNotFoundError:
+        print(f"Error: Could not find the image at {image_path}")
