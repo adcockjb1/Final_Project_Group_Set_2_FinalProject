@@ -28,6 +28,7 @@ if __name__ == "__main__":
     encryptedGroupHintsFile = path + "EncryptedGroupHints Spring 2025.json"
     teamsAndEncryptedMessagesForDistributionFile = path + "TeamsAndEncryptedMessagesForDistribution.json"
     englishFile = path + "UCEnglish.txt"
+    groupPic = path + "group_photo.jpg"
     teamName = "Myra Fleener"
 
 
@@ -54,9 +55,5 @@ if __name__ == "__main__":
 
     # -- Display the image of our success here --
     printer = picturePrinter()
-
-    printer.groupImagepyCheck()
-
     
-    print("Display Group Photo...")
-    display_group_photo()
+    printer.display_group_photo(groupPic)

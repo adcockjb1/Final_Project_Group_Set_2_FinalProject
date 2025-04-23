@@ -25,8 +25,8 @@ class movieDecrypt():
     def fernetEncript(self, key, ourToken):
         """
         Decripte messtage encripted with Fernet encryption scheme
-        @param key : The fernet key
-        @param token : The encripted file
+        @param key String: The fernet key
+        @param token String: The encripted file
         @return String: The decripted message
         """
         f = Fernet(key)

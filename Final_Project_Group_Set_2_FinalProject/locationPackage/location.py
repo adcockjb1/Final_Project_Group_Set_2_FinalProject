@@ -13,7 +13,7 @@
 # Brief Description of the assignment: Solves a scavenger hunt and provides picture proof of solution
 
 
-# Brief Description of what this module does: Creates a class to decrypt the location assigned to our team
+# Brief Description of what this module does: Creates a class to create structures from files and decrypt the location assigned to our team
 # Citations: ChatGPT
 
 # Anything else thats relevant: Group name: Myra Fleener

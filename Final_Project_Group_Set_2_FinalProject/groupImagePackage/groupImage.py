@@ -20,34 +20,25 @@
 
 from PIL import Image
 import matplotlib.pyplot as plt
-import os
+#import os
 
 class picturePrinter():
 
-    def groupImagepyCheck(self):
+    def display_group_photo(self, image_path):
         """
-        Prints to confirm the class and function work
-        @params self Self: No params
-        @returns N/A
-        """
-        check = "groupImage.py works"
-        print(check)
-
-    def display_group_photo():
-        """
-        Displays photo of group with sign
-        @param image_path: str: The full path to the image file 
-        @return None
+        Displays photo of group in correct location with movie quote
+        @param image_path String: The full path to the image file 
+        @return N/A
         """
     
-        image_path = os.path.join("Data", "group_photo.jpg")
+        print("Printing group photo...")
     
-    try:
-        image = Image.open(image_path)
-        plt.imshow(image)
-        plt.axis('off')  
-        plt.title("Group Photo")
-        plt.show()
+        try:
+            image = Image.open(image_path)
+            plt.imshow(image)
+            plt.axis('off')  
+            plt.title("Group Photo")
+            plt.show()
 
-    except FileNotFoundError:
-        print(f"Error: Could not find the image at {image_path}")
+        except FileNotFoundError:
+            print(f"Error: Could not find the image at {image_path}")
