@@ -14,7 +14,7 @@
 
 
 # Brief Description of what this module does: Solves the scavenger hunt and prints a picture of our success
-# Citations: ChatGPT
+# Citations: ChatGPT https://chatgpt.com
 
 # Anything else thats relevant: Group name: Myra Fleener
 

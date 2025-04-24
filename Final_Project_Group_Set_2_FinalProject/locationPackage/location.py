@@ -14,7 +14,7 @@
 
 
 # Brief Description of what this module does: Creates a class to create structures from files and decrypt the location assigned to our team
-# Citations: ChatGPT
+# Citations: ChatGPT https://chatgpt.com
 
 # Anything else thats relevant: Group name: Myra Fleener
 
